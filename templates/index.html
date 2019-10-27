@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Auto-Schedule</title>
+    <link rel="stylesheet" type="text/css" media="all" href="static/my.css" />
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway"/>
+  </head>
+  <body>
+    <h1>Auto-Schedule</h1>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="about">About/Instructions</a></li>
+      </ul>
+    </nav>
+
+    <br><br><br>
+    <p align="left" class="description">Tired of manually having to create your
+      class schedule from scratch on Google Calendar? On Auto-Schedule you can
+    upload an PDF of your class schedule and automatically have it updated on
+    Google Calendar. With the magic of AWS and Google APIs, anything is
+    possible!</p>
+    <br><br><br>
+
+    <table>
+      <form align="left" action="http://localhost:5000/uploader" method = "POST"
+           enctype = "multipart/form-data">
+      <tr>
+        <td>
+          <p align="center">Upload Schedule PDF: <input type="file"
+            id="file_upload" name="file"
+            accept="image/*"></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p align="center"> Submit: <br><input type='submit' value="Submit"
+            class="submit"></p>
+        </td>
+      </tr>
+
+
+      </form>
+    </table>
+
+
+  </body>
+<html>
